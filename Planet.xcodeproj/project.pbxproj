@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		861B2B202AB1BC0E00CED749 /* PlanetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B1F2AB1BC0E00CED749 /* PlanetApp.swift */; };
-		861B2B222AB1BC0E00CED749 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B212AB1BC0E00CED749 /* ContentView.swift */; };
+		861B2B222AB1BC0E00CED749 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B212AB1BC0E00CED749 /* HomeView.swift */; };
 		861B2B242AB1BC0F00CED749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861B2B232AB1BC0F00CED749 /* Assets.xcassets */; };
 		861B2B272AB1BC0F00CED749 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861B2B262AB1BC0F00CED749 /* Preview Assets.xcassets */; };
 		861B2B312AB1BC0F00CED749 /* PlanetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B302AB1BC0F00CED749 /* PlanetTests.swift */; };
 		861B2B3B2AB1BC0F00CED749 /* PlanetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B3A2AB1BC0F00CED749 /* PlanetUITests.swift */; };
 		861B2B3D2AB1BC0F00CED749 /* PlanetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B3C2AB1BC0F00CED749 /* PlanetUITestsLaunchTests.swift */; };
+		861B2B4D2AB1BE2100CED749 /* HomeVm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B4C2AB1BE2100CED749 /* HomeVm.swift */; };
+		861B2B4F2AB1BE5800CED749 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B4E2AB1BE5800CED749 /* Planet.swift */; };
+		861B2B512AB1C10300CED749 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B502AB1C10300CED749 /* PlanetView.swift */; };
+		861B2B532AB1CB4200CED749 /* PlanetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B522AB1CB4200CED749 /* PlanetData.swift */; };
+		861B2B562AB1F1C900CED749 /* NetManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B552AB1F1C900CED749 /* NetManger.swift */; };
+		861B2B592AB211E200CED749 /* PlanetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B582AB211E200CED749 /* PlanetStore.swift */; };
+		861B2B5C2AB2130800CED749 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B5B2AB2130800CED749 /* EndPoint.swift */; };
+		861B2B5F2AB21D7E00CED749 /* HomePlanetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B5E2AB21D7E00CED749 /* HomePlanetCell.swift */; };
+		861B2B612AB21EF500CED749 /* LoadingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B602AB21EF500CED749 /* LoadingListView.swift */; };
+		861B2B632AB21FD500CED749 /* ViewExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861B2B622AB21FD500CED749 /* ViewExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		861B2B1C2AB1BC0E00CED749 /* Planet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861B2B1F2AB1BC0E00CED749 /* PlanetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetApp.swift; sourceTree = "<group>"; };
-		861B2B212AB1BC0E00CED749 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		861B2B212AB1BC0E00CED749 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		861B2B232AB1BC0F00CED749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861B2B262AB1BC0F00CED749 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		861B2B2C2AB1BC0F00CED749 /* PlanetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +54,16 @@
 		861B2B362AB1BC0F00CED749 /* PlanetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		861B2B3A2AB1BC0F00CED749 /* PlanetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetUITests.swift; sourceTree = "<group>"; };
 		861B2B3C2AB1BC0F00CED749 /* PlanetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		861B2B4C2AB1BE2100CED749 /* HomeVm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVm.swift; sourceTree = "<group>"; };
+		861B2B4E2AB1BE5800CED749 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		861B2B502AB1C10300CED749 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		861B2B522AB1CB4200CED749 /* PlanetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetData.swift; sourceTree = "<group>"; };
+		861B2B552AB1F1C900CED749 /* NetManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetManger.swift; sourceTree = "<group>"; };
+		861B2B582AB211E200CED749 /* PlanetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetStore.swift; sourceTree = "<group>"; };
+		861B2B5B2AB2130800CED749 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		861B2B5E2AB21D7E00CED749 /* HomePlanetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlanetCell.swift; sourceTree = "<group>"; };
+		861B2B602AB21EF500CED749 /* LoadingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingListView.swift; sourceTree = "<group>"; };
+		861B2B622AB21FD500CED749 /* ViewExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +114,14 @@
 		861B2B1E2AB1BC0E00CED749 /* Planet */ = {
 			isa = PBXGroup;
 			children = (
-				861B2B1F2AB1BC0E00CED749 /* PlanetApp.swift */,
-				861B2B212AB1BC0E00CED749 /* ContentView.swift */,
+				861B2B4A2AB1BDF800CED749 /* Models */,
+				861B2B492AB1BDEE00CED749 /* Views */,
+				861B2B4B2AB1BDFE00CED749 /* Vms */,
+				861B2B542AB1F1B100CED749 /* Services */,
+				861B2B572AB20F3B00CED749 /* Stores */,
+				861B2B5A2AB212F000CED749 /* Other */,
 				861B2B232AB1BC0F00CED749 /* Assets.xcassets */,
+				861B2B1F2AB1BC0E00CED749 /* PlanetApp.swift */,
 				861B2B252AB1BC0F00CED749 /* Preview Content */,
 			);
 			path = Planet;
@@ -125,6 +150,67 @@
 				861B2B3C2AB1BC0F00CED749 /* PlanetUITestsLaunchTests.swift */,
 			);
 			path = PlanetUITests;
+			sourceTree = "<group>";
+		};
+		861B2B492AB1BDEE00CED749 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B212AB1BC0E00CED749 /* HomeView.swift */,
+				861B2B502AB1C10300CED749 /* PlanetView.swift */,
+				861B2B5D2AB21D6200CED749 /* ViewComponents */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		861B2B4A2AB1BDF800CED749 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B4E2AB1BE5800CED749 /* Planet.swift */,
+				861B2B522AB1CB4200CED749 /* PlanetData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		861B2B4B2AB1BDFE00CED749 /* Vms */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B4C2AB1BE2100CED749 /* HomeVm.swift */,
+			);
+			path = Vms;
+			sourceTree = "<group>";
+		};
+		861B2B542AB1F1B100CED749 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B552AB1F1C900CED749 /* NetManger.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		861B2B572AB20F3B00CED749 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B582AB211E200CED749 /* PlanetStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		861B2B5A2AB212F000CED749 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B5B2AB2130800CED749 /* EndPoint.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		861B2B5D2AB21D6200CED749 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				861B2B5E2AB21D7E00CED749 /* HomePlanetCell.swift */,
+				861B2B602AB21EF500CED749 /* LoadingListView.swift */,
+				861B2B622AB21FD500CED749 /* ViewExtentions.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				861B2B222AB1BC0E00CED749 /* ContentView.swift in Sources */,
+				861B2B562AB1F1C900CED749 /* NetManger.swift in Sources */,
+				861B2B5C2AB2130800CED749 /* EndPoint.swift in Sources */,
+				861B2B4D2AB1BE2100CED749 /* HomeVm.swift in Sources */,
+				861B2B632AB21FD500CED749 /* ViewExtentions.swift in Sources */,
+				861B2B222AB1BC0E00CED749 /* HomeView.swift in Sources */,
 				861B2B202AB1BC0E00CED749 /* PlanetApp.swift in Sources */,
+				861B2B4F2AB1BE5800CED749 /* Planet.swift in Sources */,
+				861B2B592AB211E200CED749 /* PlanetStore.swift in Sources */,
+				861B2B512AB1C10300CED749 /* PlanetView.swift in Sources */,
+				861B2B5F2AB21D7E00CED749 /* HomePlanetCell.swift in Sources */,
+				861B2B532AB1CB4200CED749 /* PlanetData.swift in Sources */,
+				861B2B612AB21EF500CED749 /* LoadingListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
