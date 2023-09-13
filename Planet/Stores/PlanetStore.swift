@@ -8,23 +8,25 @@ import Combine
 class PlanetStore: ObservableObject {
     
     @Published var planetData: PlanetData?
+    @Published var fetchingData = true
     
     private var cancellables: Set<AnyCancellable> = []
     
     init(){
-        Task(priority:.high){
-            await fetchPlanetData()
-        }
+        fetchPlanetData()
     }
     
     
-    private func fetchPlanetData()async{
-        await NetManager.shared.fetchData(from: .planetLoad, responseType: PlanetData.self)
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { _ in }) { [weak self] pData in
-                self?.planetData = pData
-            }
-            .store(in: &cancellables)
+    private func fetchPlanetData(){
+        Task(priority:.high){
+            await NetManager.shared.fetchData(from: .planetLoad, responseType: PlanetData.self)
+                .receive(on: DispatchQueue.main)
+                .sink(receiveCompletion: { _ in }) {
+                    self.planetData = $0
+                }
+                .store(in: &cancellables)
+            fetchingData.toggle()
+        }
     }
     
     func removePlanet(){
