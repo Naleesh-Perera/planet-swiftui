@@ -19,7 +19,7 @@ class PlanetStore: ObservableObject {
     
     private func fetchPlanetData(){
         Task(priority:.high){
-            await NetManager.shared.fetchData(from: .planetLoad, responseType: PlanetData.self)
+            await NetManager.shared.fetchData(from: .planetLoad)
                 .receive(on: DispatchQueue.main)
                 .sink(receiveCompletion: { _ in }) {
                     self.planetData = $0

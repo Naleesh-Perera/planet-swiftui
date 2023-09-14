@@ -22,7 +22,7 @@ struct Planet: Codable, Identifiable{
     let edited: String
     let url: String
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case name
         case rotationPeriod = "rotation_period"
         case orbitalPeriod = "orbital_period"

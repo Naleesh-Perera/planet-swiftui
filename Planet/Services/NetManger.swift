@@ -10,7 +10,7 @@ actor NetManager {
     static let shared = NetManager()
     private init() {}
     
-    func fetchData<T: Decodable>(from endpoint: EndPoint, responseType: T.Type) -> AnyPublisher<T, Error> {
+    func fetchData<T: Decodable>(from endpoint: EndPoint) -> AnyPublisher<T, Error> {
         
         guard let url = URL(string: endpoint.rawValue) else {
             return Fail(error: NSError(domain: "Invalid URL", code: 0, userInfo: nil)).eraseToAnyPublisher()
